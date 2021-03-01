@@ -1,9 +1,10 @@
 import './App.css';
+import Images from './components/Images'
 
 function App() {
   return (
-    <div className="App">
-      image-gallery
+    <div>
+      <Images />
     </div>
   );
 }
