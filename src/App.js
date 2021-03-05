@@ -3,7 +3,7 @@ import Images from './components/Images'
 
 function App() {
   return (
-    <div>
+    <div className='bg-gray-800 pb-5 min-h-screen'>
       <Images />
     </div>
   );

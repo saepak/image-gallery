@@ -21,20 +21,21 @@ const Images = () => {
 
 
     return (
-        <div className="container mx-auto">
+      <div>
+        <ImageSearch searchText={(text) => setTerm(text)}/>
 
-          <ImageSearch searchText={(text) => setTerm(text)}/>
+        <div className="container mx-auto px-3 xs:p-0">
+            {!isLoading && images.length === 0 && <h1 className='text-5xl text-center mx-auto mt-32 text-white'>No 
+            images Found</h1>}
 
-          {!isLoading && images.length === 0 && <h1 className='text-5xl text-center mx-auto mt-32'>No 
-          images Found</h1>}
-
-          {isLoading ? <h1 className='text-6xl text-center mx-auto mt-32'>Loading..</h1> :
-            <div className="grid grid-cols-3 gap-4">
-                {images.map(image => (
-                    <ImageCard key={image.id} image={image} />
-                ))}
-            </div>
-          }
+            {isLoading ? <h1 className='text-6xl text-center mx-auto mt-32 text-white'>Loading..</h1> :
+              <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-4">
+                  {images.map(image => (
+                      <ImageCard key={image.id} image={image} />
+                  ))}
+              </div>
+            }
+        </div>
       </div>
     )
 }
