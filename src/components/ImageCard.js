@@ -16,16 +16,16 @@ const ImageCard = ({ image }) => {
         </div>
         <ul>
           <li>
-            <strong>Views: </strong>
-            {views}
+            Views :  
+            <strong> {views} </strong>
           </li>
           <li>
-            <strong>Downloads: </strong>
-            {downloads}
+            Downloads: 
+            <strong> {downloads} </strong>
           </li>
           <li>
-            <strong>Likes: </strong>
-            {likes}
+            Likes:
+            <strong> {likes} </strong>
           </li>
         </ul>
       </div>
