@@ -5,6 +5,9 @@ module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    textShadow: {
+      'md': '1px 1px 2px rgba(0,0,0,.1)',
+   },
     screens: {
       'xs': '400px',
       'sm': '640px',
@@ -38,7 +41,11 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundClip: ['hover', 'focus'],
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 }
