@@ -14,7 +14,7 @@ const ImageSearch = ({searchText}) => {
             <div className='max-w-md rounded overflow-hidden my-10 mx-auto'>
 
                 <h1 className='text-center font-black text-4xl md:text-6xl pb-4'>
-                    <span className='text-transparent bg-clip-text bg-gradient-to-br from-yellow-300 to-indigo-400'>Search Images</span>
+                    <span className='text-transparent bg-clip-text bg-gradient-to-br from-yellow-400 to-indigo-400'>Search Images</span>
                 </h1>
 
                 <div className='m-2 bg-white rounded'>

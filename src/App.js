@@ -3,9 +3,11 @@ import Images from './components/Images'
 
 function App() {
   return (
-    <div className='min-h-screen bg-hero-pattern bg-cover border-2 border-yellow-300'>
-      <div className='bg-black bg-opacity-50 pb-5 min-h-screen font-sans'>
-        <Images />
+    <div className='bg-gradient-to-br from-yellow-400 to-indigo-500 p-1.5'>
+      <div className='min-h-screen bg-hero-pattern bg-cover'>
+        <div className='bg-black bg-opacity-50 pb-5 min-h-screen font-sans'>
+          <Images />
+        </div>
       </div>
     </div>
   );
