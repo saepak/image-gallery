@@ -10,7 +10,7 @@ const ImageSearch = ({searchText}) => {
     }
 
     return (
-        <div className='pt-3 pb-0.5'>
+        <div className='p-3 pb-0.5'>
             <div className='max-w-md rounded overflow-hidden my-10 mx-auto'>
 
                 <h1 className='text-center font-black text-4xl md:text-6xl pb-4'>

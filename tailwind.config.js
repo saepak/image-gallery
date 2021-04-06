@@ -27,7 +27,7 @@ module.exports = {
       yellow: colors.amber,
     },
     fontFamily: {
-      'sans': ['Montserrat']
+      'sans': ['Montserrat','Helvetica', 'Arial', 'sans-serif']
     },
     extend: {
       backgroundImage: theme => ({
@@ -45,7 +45,6 @@ module.exports = {
       backgroundClip: ['hover', 'focus'],
     },
   },
-  plugins: [
-    require('tailwindcss-textshadow')
-  ],
+
+  plugins: [ ],
 }

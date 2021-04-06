@@ -24,7 +24,7 @@ const Images = () => {
       <div>
         <ImageSearch searchText={(text) => setTerm(text)}/>
 
-        <div className="container mx-auto px-3 xs:p-0">
+        <div className="max-w-screen-xl mx-auto px-3 xs:p-0">
             {!isLoading && images.length === 0 && <h1 className='text-5xl text-center mx-auto mt-32 text-white'>No 
             images Found</h1>}
 
